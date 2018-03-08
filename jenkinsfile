@@ -19,7 +19,7 @@ pipeline {
                  }
         stage('Document') {
             steps {
-                echo 'Document5....'
+                echo 'Document6....'
             }
         }
     }
