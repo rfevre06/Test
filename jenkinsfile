@@ -6,7 +6,6 @@ pipeline {
             steps {
                 echo 'Building1..'
                 echo "${params.door_choice}"
-                sh 'explorer.exe'
             }
         }
         stage('Test') {
