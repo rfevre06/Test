@@ -1,11 +1,18 @@
 pipeline {
     agent any
     
+    paramters {
+      choice(name: 'door_choice',
+        choices: 'one\ntwo\nthree\nfour',
+        description: 'what door do you choose?')
+    }
+    
     stages {
         stage('Build') {
             steps {
                 echo 'Building1..'
                 echo "${params.c_option}"
+                 echo "${params.door_choice}"
             }
         }
         stage('Test') {
