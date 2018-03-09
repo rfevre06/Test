@@ -1,7 +1,7 @@
 pipeline {
     agent any
     
-    paramters {
+    parameters {
       choice(name: 'door_choice',
         choices: 'one\ntwo\nthree\nfour',
         description: 'what door do you choose?')
