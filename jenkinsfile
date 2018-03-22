@@ -28,10 +28,10 @@ pipeline {
     
     
     def run_test()  {
-    if (${params.door_choice} == 'one') {
+    if ( door_choice == 'one') {
       echo 'run_test 1'
          }
-    if (${params.door_choice} == 'two') {
+    if ( door_choice == 'two') {
       echo 'run_test 2'
          }
     }
