@@ -24,16 +24,14 @@ pipeline {
                 echo 'Document17....'
             }
         }
-        
-        
-     def run_test()  {
-    if ( door_choice == 'one') {
-      echo 'run_test 1'
-         }
-    if ( door_choice == 'two') {
-      echo 'run_test 2'
-         }
-      }      
-        
     }
 }
+
+def run_test()  {
+  if ( door_choice == 'one') {
+    echo 'run_test 1'
+       }
+  if ( door_choice == 'two') {
+    echo 'run_test 2'
+       }
+   }      
