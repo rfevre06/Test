@@ -1,3 +1,7 @@
+node {
+   echo 'Node section'
+}
+
 pipeline {
     agent any
         
